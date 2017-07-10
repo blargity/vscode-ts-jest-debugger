@@ -24,8 +24,16 @@
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testPathIgnorePatterns": [
-      "/node_modules/"
+      "/node_modules/",
+      "/tsc/"
     ],
-    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": { 
+          "module": "commonjs"
+         }
+      }
+    }
   }
 }
