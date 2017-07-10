@@ -1,0 +1,31 @@
+{
+  "name": "vscode-ts-jest-debugger",
+  "version": "0.0.1",
+  "description": "Reproduction case to demonstrate trouble with getting VSCode to debug Typescript Jest Tests",
+  "scripts": {
+    "start": "jest",
+    "test": "jest"
+  },
+  "author": "Kevin Brown",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.6",
+    "typescript": "^2.4.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+  }
+}
