@@ -13,10 +13,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "tsc",
-    "paths": {
-      "coinage": ["src"],
-      "coinage/*": ["src/*"]
-    },
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": false,
