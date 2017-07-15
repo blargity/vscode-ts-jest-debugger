@@ -30,9 +30,9 @@
     "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
     "globals": {
       "ts-jest": {
-        "tsConfigFile": { 
+        "tsConfigFile": {
           "module": "commonjs"
-         }
+        }
       }
     }
   }
